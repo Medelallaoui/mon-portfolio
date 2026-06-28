@@ -1,0 +1,813 @@
+/* ========================================= */
+/* Réinitialisation des styles */
+/* ========================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ========================================= */
+/* Style général de la page */
+/* ========================================= */
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#f4f4f4;
+
+}
+
+/* ========================================= */
+/* En-tête */
+/* ========================================= */
+
+header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:#222;
+
+    padding:20px 80px;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+}
+
+/* Logo */
+
+.logo{
+
+    color:white;
+
+}
+
+/* Liens du menu */
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-left:25px;
+
+    transition:0.3s;
+
+}
+
+/* Effet au passage de la souris */
+
+nav a:hover{
+
+    color:#00bcd4;
+
+}
+/* ========================================= */
+/* Hero Section */
+/* ========================================= */
+
+.hero{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:100px;
+
+
+
+}
+
+/* Zone du texte */
+
+.hero-text{
+
+    width:55%;
+
+}
+
+/* Grand titre */
+
+.hero-text h1{
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+}
+
+/* Couleur du nom */
+
+.hero-text span{
+
+    color:#00bcd4;
+
+}
+
+/* Sous-titre */
+
+.hero-text h3{
+
+    color:#555;
+
+    margin-bottom:20px;
+
+}
+
+/* Description */
+
+.hero-text p{
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+}
+
+/* Bouton */
+
+.btn{
+
+    display:inline-block;
+
+    background:#00bcd4;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 25px;
+
+    border-radius:8px;
+
+    transition:0.3s;
+
+}
+
+/* Effet au survol */
+
+.btn:hover{
+
+    background:#008fa1;
+
+}
+
+/* Image */
+
+.hero-image img{
+
+    width:320px;
+
+    border-radius:50%;
+
+}
+
+/* ========================================= */
+/* Section À propos */
+/* ========================================= */
+
+.about{
+
+    padding:80px;
+
+    background:white;
+
+}
+
+/* Titre */
+
+.about h2{
+
+    text-align:center;
+
+    font-size:38px;
+
+    margin-bottom:50px;
+
+    color:#00bcd4;
+
+}
+
+/* Conteneur */
+
+.about-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+
+}
+
+/* Cartes */
+
+.about-card{
+
+    width:450px;
+
+    background:#f8f9fa;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+
+}
+
+/* Animation au survol */
+
+.about-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+/* Titres */
+
+.about-card h3{
+
+    margin-bottom:20px;
+
+    color:#00bcd4;
+
+}
+
+/* Paragraphes */
+
+.about-card p{
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+
+/* ========================================= */
+/* Section Projets */
+/* ========================================= */
+
+.projects{
+
+    padding:80px;
+
+    background:#f4f4f4;
+
+}
+
+.projects h2{
+
+    text-align:center;
+
+    font-size:38px;
+
+    margin-bottom:50px;
+
+}
+
+.projects-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:30px;
+
+}
+
+.project-card{
+
+    width:320px;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.project-card h3{
+
+    margin-bottom:15px;
+
+    color:#00bcd4;
+
+}
+
+.project-card p{
+
+    color:#555;
+
+    line-height:1.7;
+
+    margin-bottom:20px;
+
+}
+
+.project-card a{
+
+    text-decoration:none;
+
+    color:white;
+
+    background:#00bcd4;
+
+    padding:10px 20px;
+
+    border-radius:8px;
+
+}
+
+.project-card a:hover{
+
+    background:#008fa1;
+
+}
+
+/* ========================================= */
+/* Section Compétences */
+/* ========================================= */
+
+.skills{
+
+    padding:80px;
+
+    background:white;
+
+}
+
+.skills h2{
+
+    text-align:center;
+
+    font-size:38px;
+
+    margin-bottom:50px;
+
+}
+
+.skills-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:30px;
+
+}
+
+.skill-card{
+
+    width:260px;
+
+    background:#f8f9fa;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.skill-card h3{
+
+    margin-bottom:20px;
+
+    color:#00bcd4;
+
+}
+
+.skill-card ul{
+
+    list-style:none;
+
+}
+
+.skill-card li{
+
+    margin-bottom:12px;
+
+    color:#555;
+
+}
+
+/* ========================================= */
+/* Section Contact */
+/* ========================================= */
+
+.contact{
+
+    padding:80px;
+
+    background:#f4f4f4;
+
+}
+
+.contact h2{
+
+    text-align:center;
+
+    font-size:38px;
+
+    margin-bottom:50px;
+
+}
+
+.contact-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:30px;
+
+}
+
+.contact-card{
+
+    width:260px;
+
+    background:white;
+
+    padding:25px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.contact-card h3{
+
+    color:#00bcd4;
+
+    margin-bottom:15px;
+
+    text-align: center;
+
+}
+
+.contact-card p{
+
+    color:#555;
+    
+    overflow-wrap: break-word;
+
+}
+
+
+
+.contact-card a{
+
+    color:#00bcd4;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+.contact-card a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ========================================= */
+/* Responsive Design */
+/* ========================================= */
+
+@media (max-width: 768px){
+
+    /* Header */
+
+    header{
+
+        flex-direction:column;
+
+        padding:20px;
+
+    }
+
+    nav{
+
+        margin-top:20px;
+
+    }
+
+    nav a{
+
+        display:block;
+
+        margin:10px 0;
+
+    }
+
+    /* Hero */
+
+    .hero{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        padding:40px 20px;
+
+    }
+
+    .hero-text{
+
+        width:100%;
+
+    }
+
+    .hero-image{
+
+        margin-top:30px;
+
+    }
+
+    .hero-image img{
+
+        width:220px;
+
+    }
+
+    /* About */
+
+    .about-container{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    /* Projects */
+
+    .projects-container{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    /* Skills */
+
+    .skills-container{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    /* Contact */
+
+    .contact-container{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+}
+
+/* ========================================= */
+/* Footer */
+/* ========================================= */
+
+footer{
+
+    background:#222;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px 20px;
+
+}
+
+footer p{
+
+    margin:10px 0;
+
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+/* ========================================= */
+/* Dark Mode */
+/* ========================================= */
+
+/* Bouton */
+
+#theme-toggle{
+
+    padding:10px 15px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+}
+
+/* Classe ajoutée avec JavaScript */
+
+.dark-mode{
+
+    background:#121212;
+
+    color:white;
+
+}
+
+/* Titres */
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p{
+
+    color:white;
+
+}
+
+/* Cartes */
+
+.dark-mode .about-card,
+.dark-mode .project-card,
+.dark-mode .skill-card,
+.dark-mode .contact-card{
+
+    background:#1f1f1f;
+
+}
+
+/* ========================================= */
+/* Dark Mode */
+/* ========================================= */
+
+/* Couleur générale */
+
+.dark-mode{
+    background:#121212;
+    color:white;
+}
+
+/* Sections */
+
+.dark-mode .about,
+.dark-mode .projects,
+.dark-mode .skills,
+.dark-mode .contact{
+
+    background:#121212;
+
+}
+
+/* Cartes */
+
+.dark-mode .about-card,
+.dark-mode .project-card,
+.dark-mode .skill-card,
+.dark-mode .contact-card{
+
+    background:#1f1f1f;
+
+    color:white;
+
+}
+
+/* Titres */
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3{
+
+    color:white;
+
+}
+
+/* Paragraphes */
+
+.dark-mode p{
+
+    color:#dcdcdc;
+
+}
+
+/* Liens */
+
+.dark-mode a{
+
+    color:#00bcd4;
+
+}
+
+/* Header */
+
+.dark-mode header{
+
+    background:#000;
+
+}
+
+/* Footer */
+
+.dark-mode footer{
+
+    background:#000;
+
+}
+.dark-mode .hero a {
+    background:#807d7d;
+}
+
+/* Animation lors du changement de thème */
+
+body,
+header,
+footer,
+.about,
+.projects,
+.skills,
+.contact,
+.about-card,
+.project-card,
+.skill-card,
+.contact-card{
+
+    transition:0.4s;
+
+}
